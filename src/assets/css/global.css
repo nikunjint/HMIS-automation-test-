@@ -1,0 +1,497 @@
+/* Here we are overwriting bootstrap default css and declaring the global css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap');
+/* Media print */
+ @media print {
+       body{
+        font-family: 'Poppins'  !important;
+        background-color: red;
+       }
+ }
+
+
+/* Custom fonts */
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('fonts/icomoon.eot?bcnxq1');
+  src: url('fonts/icomoon.eot?bcnxq1#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?bcnxq1') format('truetype'),
+    url('fonts/icomoon.woff?bcnxq1') format('woff'),
+    url('fonts/icomoon.svg?bcnxq1#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-account:before {
+  content: '\e900';
+}
+.icon-analytics:before {
+  content: '\e901';
+}
+.icon-appointment:before {
+  content: '\e903';
+}
+.icon-claim-management:before {
+  content: '\e904';
+}
+.icon-daily-report:before {
+  content: '\e905';
+}
+.icon-emergency:before {
+  content: '\e906';
+}
+.icon-inventory:before {
+  content: '\e907';
+}
+.icon-investigation:before {
+  content: '\e908';
+}
+.icon-master-setup:before {
+  content: '\e909';
+}
+.icon-medical-record:before {
+  content: '\e90a';
+}
+.icon-mis:before {
+  content: '\e90b';
+}
+.icon-opd:before {
+  content: '\e90c';
+}
+.icon-ot:before {
+  content: '\e90d';
+}
+.icon-patient-administration:before {
+  content: '\e90e';
+}
+.icon-pharmacy:before {
+  content: '\e90f';
+}
+.icon-pis:before {
+  content: '\e910';
+}
+.icon-queue-management:before {
+  content: '\e911';
+}
+.icon-usermanagement:before {
+  content: '\e912';
+}
+.icon-ward:before {
+  content: '\e913';
+}
+.icon-square:before {
+  content: '\e914';
+}
+.icon-bed:before {
+  content: '\e902';
+}
+
+/* FONT ends here */
+
+/* FONT DECLARATION */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: url('@/assets/img/bg.svg') no-repeat center #e8eef7;
+  background-position: 0 bottom;
+  font-size: 14px;
+  height: 100%;
+}
+
+/* COLORS DECLARATION AND OVERWRITING BOOTSTRAP COLORS WITH THEME COLORS */
+
+:root {
+  --primary: #0d2f66;
+  /* LIGHT VERSION */
+  --light-0: #f8f9fa;
+  --light-10: #dfe0e1;
+  --light-20: #c6c7c8;
+  --light-30: #aeaeaf;
+  --light-40: #959596;
+  --light-50: #7c7d7d;
+  --light-60: #636464;
+  --light-70: #4a4b4b;
+  --light-80: #323232;
+  --light-90: #191919;
+  --light-100: #000000;
+
+  /* Dark Version */
+  --dark-0: #212529;
+  --dark-10: #1e2125;
+  --dark-20: #1a1e21;
+  --dark-30: #171a1d;
+  --dark-40: #141619;
+  --dark-50: #111315;
+  --dark-60: #0d0f10;
+  --dark-70: #0a0b0c;
+  --dark-80: #070708;
+  --dark-90: #030404;
+  --dark-100: #000000;
+
+  /* PRIMARY COLOR */
+  --primary-0: rgb(23, 83, 179);
+  --primary-10: #154ba1;
+  --primary-20: #12428f;
+  --primary-30: #103a7d;
+  --primary-40: #0e326b;
+  --primary-50: #0c2a5a;
+  --primary-60: #092148;
+  --primary-70: #071936;
+  --primary-80: #051124;
+  --primary-90: #020812;
+  --primary-100: #000000;
+
+  /* PRIMARY LIGHT VERSION */
+  --primary-light-0: #1753b3;
+  --primary-light-10: #2e64bb;
+  --primary-light-20: #4575c2;
+  --primary-light-30: #5d87ca;
+  --primary-light-40: #7498d1;
+  --primary-light-50: #8ba9d9;
+  --primary-light-60: #a2bae1;
+  --primary-light-70: #b9cbe8;
+  --primary-light-80: #d1ddf0;
+  --primary-light-90: #e8eef7;
+  --primary-light-100: #fff;
+
+  /* Overwriting bootstrap css */
+  --bs-font-sans-serif: 'Poppins', sans-serif;
+  --bs-primary-rgb: 13, 47, 102;
+  --bs-table-bg: var(--primary);
+
+  /* Overwriting vue easy table css */
+  --easy-table-header-background-color:var(--primary) !important;
+  --easy-table-header-font-color:#fff !important
+}
+
+/* Typography */
+h1,
+h2,
+h3 {
+  color: var(--primary-20);
+  
+}
+
+h1 {
+  font-size: 28px;
+}
+h2 {
+  font-size: 24px;
+}
+h3 {
+  font-size: 22px;
+}
+h4 {
+  font-size: 20px;
+}
+h5 {
+  font-size: 18px;
+}
+h6 {
+  font-size: 16px;
+}
+
+/* Links */
+a {
+  color: var(--primary-30);
+  transition: all 200ms ease-in-out;
+  text-decoration: none;
+}
+
+/* Forms */
+.form-select,
+.form-control {
+  font-size: 13px;
+}
+
+/* Buttons */
+.btn-sm,
+.btn-group-sm > .btn {
+  font-size: 0.775rem;
+}
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  white-space: nowrap;
+}
+.btn-primary:hover {
+  background-color: var(--primary-light-0);
+  border-color: var(--primary-light-0);
+}
+.btn {
+  font-size: 0.9rem;
+}
+.btn-sm,
+.btn-group-sm > .btn {
+  font-size: 11px;
+}
+/* Card */
+
+.card-body {
+  padding: 0.1rem;
+}
+
+/* Float Button */
+.float-btn {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  font-size: 0.9rem;
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  font-weight: 600;
+  border: 1px solid #fff;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+/* Input group */
+
+.input-group .btn {
+  font-size: 14px;
+}
+
+/* User media */
+
+.user-media {
+  background-color: var(--primary-light-90);
+  border: 1px solid #eee;
+  padding: 1rem;
+  border-radius: 4px;
+  position: relative;
+}
+.user-media > div {
+  position: relative;
+  z-index: 2;
+}
+.user-media:after {
+  content: '';
+  width: 100%;
+  height: 90px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url('../img/user-bg.png') no-repeat 0;
+  background-size: cover;
+  z-index: 1;
+  perspective: 1000;
+}
+.user-media_img {
+  border: 2px solid #fff;
+}
+/* Footer */
+.footer {
+  padding-left: 4rem;
+  font-size: 13px;
+}
+
+/* Helper css */
+.fw-semi {
+  font-weight: 600;
+}
+
+/* Tables */
+table thead th {
+  background-color: var(--primary-light-100);
+  font-size: 14px;
+  white-space: nowrap;
+  font-weight: 400;
+}
+
+.table-primary {
+  --bs-table-bg: var(--primary);
+}
+.table-sm th,
+.table-sm td {
+  font-size: 13.5px;
+  font-weight: 500;
+}
+.table > :not(:first-child) {
+  border-top: 1px solid transparent;
+}
+.table-sm > :not(caption) > * > * {
+  padding: 0.3rem;
+}
+
+.table input.form-control{
+  padding: 4px 0;
+}
+
+.table > :not(caption) > * > * {
+  padding: 0.3rem;
+}
+
+/* text */
+
+.text-primary {
+  color: var(--primary) !important;
+}
+
+/* zindex */
+.zindex-sticky {
+  z-index: 1020;
+}
+
+/* Tabs */
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: var(--primary);
+}
+.nav-link {
+  color: var(--primary);
+}
+.btn-outline-primary {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+.btn-outline-primary:hover {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+.nav-tabs .nav-link,
+.nav-pills .nav-link {
+  font-weight: 500;
+}
+/* Height */
+.mh-auto {
+  min-height: auto;
+}
+
+.h-120{
+  height: 120px;
+}
+
+/* Off canvas */
+
+.offcanvas-end {
+  width: 320px;
+}
+
+.nav-pills-md .nav-link {
+  padding-left: 0.9rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  padding-right: 0.9rem;
+  font-size: 13px;
+}
+.fs-13 {
+  font-size: 13px;
+}
+
+/* tabulator css */
+.tabulator .tabulator-header .tabulator-col {
+  background-color: var(--primary) !important;
+  color: #fff;
+}
+.tabulator {
+  margin-bottom: 1rem;
+}
+.tabulator-row.tabulator-selectable:hover {
+  background-color: #f3f3f3 !important;
+}
+/* Custom height define */
+.h-180px {
+  max-height: 180px;
+}
+
+
+/* Vue 3 easy table css  */
+.vue3-easy-data-table__main.fixed-header th .header-text{
+  font-weight: 600;
+}
+.vue3-easy-data-table__body td{
+  cursor: pointer;
+}
+
+
+.color-blue{
+  background-color: var(--primary);
+}
+
+/*modal*/
+
+.modal-header{
+  padding: 0.5rem 1rem;
+  background: var(--primary);
+  color: white;
+}
+
+.btn-close {
+  background: url(/src/assets/img/close.png) !important;
+  background-size: contain !important;
+  opacity: 1;
+  width: 5px;
+  height: 5px;
+}
+
+/* hr */
+
+hr.mt-2{
+  margin-bottom: 0.5rem;
+  margin-top: 0.2rem !important;
+}
+
+/* Overwriting bootstrap css */
+.fs-12{
+  font-size: 12px;
+}
+
+/*text-editor*/
+
+.ql-container .ql-editor {
+ height: 300px;
+}
+
+/*status background color*/
+
+.status div{
+  border-radius: 5px !important;
+  font-size: 11px;
+  margin-top: 3px;
+  padding: 3px 10px;
+  text-align: center;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.Dispatchedheader{
+  background: #008000;
+  color: #fff;
+}
+
+.Pendingheader{
+  background: #ddd;
+  color: #000;
+}
+
+.scollect{
+  background: #0087a6;
+  color: #fff;
+}
+
+
+/* positioning */
+
+.left-0{
+  left: 0;
+}
+
+.left-5{
+  left: 5px;
+}
+

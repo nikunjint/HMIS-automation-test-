@@ -1,0 +1,90 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?nci7ga');
+  src:  url('fonts/icomoon.eot?nci7ga#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?nci7ga') format('truetype'),
+    url('fonts/icomoon.woff?nci7ga') format('woff'),
+    url('fonts/icomoon.svg?nci7ga#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-account:before {
+  content: "\e900";
+}
+.icon-analytics:before {
+  content: "\e901";
+}
+.icon-appointment:before {
+  content: "\e903";
+}
+.icon-claim-management:before {
+  content: "\e904";
+}
+.icon-daily-report:before {
+  content: "\e905";
+}
+.icon-emergency:before {
+  content: "\e906";
+}
+.icon-inventory:before {
+  content: "\e907";
+}
+.icon-investigation:before {
+  content: "\e908";
+}
+.icon-master-setup:before {
+  content: "\e909";
+}
+.icon-medical-record:before {
+  content: "\e90a";
+}
+.icon-mis:before {
+  content: "\e90b";
+}
+.icon-opd:before {
+  content: "\e90c";
+}
+.icon-ot:before {
+  content: "\e90d";
+}
+.icon-patient-administration:before {
+  content: "\e90e";
+}
+.icon-pharmacy:before {
+  content: "\e90f";
+}
+.icon-pis:before {
+  content: "\e910";
+}
+.icon-queue-management:before {
+  content: "\e911";
+}
+.icon-usermanagement:before {
+  content: "\e912";
+}
+.icon-ward:before {
+  content: "\e913";
+}
+.icon-square:before {
+  content: "\e914";
+}
+.icon-bed:before {
+  content: "\e902";
+}
